@@ -27,3 +27,6 @@ unidecode
 yt-dlp
 youtube-search
 youtube-search-python
+flask
+flask_restful
+gunicorn
