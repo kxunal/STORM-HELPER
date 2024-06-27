@@ -1,0 +1,57 @@
+{
+    "name": "ᴘʏᴛʜᴏɴ ダ ᴄᴜx",
+    "description": "Most usless telegram bot ever made.",
+    "logo": "https://graph.org/file/67879e44ef145dac39803.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "pythoncux",
+    "uslessbot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "A Bot's token from Botfather",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "Get a mongodb url from https://cloud.mongodb.com.",
+        "value": "",
+        "required": true
+      },
+      "SUDOERS": {
+        "description": "The user id of user whom you would like to add as SUDO.",
+        "value": "",
+        "required": true
+      },
+      "LOGGER_ID": {
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
+        "value": "",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          }
+      ],
+      "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
